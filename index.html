@@ -59,37 +59,53 @@
             </div>
         </header>
         
-        <!-- Services-->
-        <section class="page-section" id="services">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Services</h2>
-                    <h3 class="section-subheading text-muted">Offering different kinds of services</h3>
-                </div>
-                <div class="row text-center">
-                    <!-- Photography Service -->
-                    <div class="col-md-4">
-                        <img src="assets/img/about/pht.jpg" alt="Photography" class="img-fluid service-image">
-                        <h4 class="my-3">Photography</h4>
-                        <p class="text-muted">Capture beautiful moments in weddings, events, and portraits.</p>
-                    </div>
-        
-                    <!-- Web Development Service -->
-                    <div class="col-md-4">
-                        <img src="assets/img/about/web.png" alt="Web Development" class="img-fluid service-image">
-                        <h4 class="my-3">Web Development</h4>
-                        <p class="text-muted">Build responsive and stunning websites tailored to your needs.</p>
-                    </div>
-        
-                    <!-- Technical Assistance Service -->
-                    <div class="col-md-4">
-                        <img src="assets/img/about/tech.jpg" alt="Technical Assistance" class="img-fluid service-image">
-                        <h4 class="my-3">Technical Assistance</h4>
-                        <p class="text-muted">Professional post-production services to enhance your media.</p>
-                    </div>
-                </div>
+      <!-- Services-->
+<section class="page-section" id="services">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Services</h2>
+            <h3 class="section-subheading text-muted">Offering different kinds of services</h3>
+        </div>
+        <div class="row text-center">
+            <!-- Photography Service -->
+            <div class="col-md-4">
+                <img src="assets/img/about/pht.jpg" alt="Photography" class="img-fluid service-image" onclick="showHiddenImage('photo-hidden')">
+                <h4 class="my-3">Photography</h4>
+                <p class="text-muted">Capture beautiful moments in weddings, events, and portraits.</p>
+                <!-- Hidden Image -->
+                <img id="photo-hidden" src="assets/img/about/photo_hidden.jpg" alt="Hidden Photography" class="hidden-image">
             </div>
-        </section>
+
+            <!-- Web Development Service -->
+            <div class="col-md-4">
+                <img src="assets/img/about/web.png" alt="Web Development" class="img-fluid service-image" onclick="showHiddenImage('web-hidden')">
+                <h4 class="my-3">Web Development</h4>
+                <p class="text-muted">Build responsive and stunning websites tailored to your needs.</p>
+                <!-- Hidden Image -->
+                <img id="web-hidden" src="assets/img/about/web_hidden.jpg" alt="Hidden Web Development" class="hidden-image">
+            </div>
+
+            <!-- Technical Assistance Service -->
+            <div class="col-md-4">
+                <img src="assets/img/about/tech.jpg" alt="Technical Assistance" class="img-fluid service-image" onclick="showHiddenImage('tech-hidden')">
+                <h4 class="my-3">Technical Assistance</h4>
+                <p class="text-muted">Professional post-production services to enhance your media.</p>
+                <!-- Hidden Image -->
+                <img id="tech-hidden" src="assets/img/about/tech_hidden.jpg" alt="Hidden Technical Assistance" class="hidden-image">
+
+                <!-- Hidden List -->
+                <ul id="tech-hidden-list" class="hidden-list">
+                    <li>Hardware Setup</li>
+                    <li>Software Installation</li>
+                    <li>Network Troubleshooting</li>
+                    <li>Data Recovery</li>
+                    <li>System Maintenance</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
         
         <!-- Portfolio Grid-->
         <section class="page-section bg-light" id="portfolio">

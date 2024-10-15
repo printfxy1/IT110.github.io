@@ -38,6 +38,28 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     };
 
+    function showHiddenImage(imageId) {
+        var hiddenImage = document.getElementById(imageId);
+        
+        // Toggle the 'show' class to display or hide the image
+        if (hiddenImage.classList.contains('show')) {
+            hiddenImage.classList.remove('show');
+        } else {
+            hiddenImage.classList.add('show');
+        }
+    }
+    
+    function showHiddenList(listId) {
+        var hiddenList = document.getElementById(listId);
+        
+        // Toggle the 'show-list' class to display or hide the list
+        if (hiddenList.classList.contains('show-list')) {
+            hiddenList.classList.remove('show-list');
+        } else {
+            hiddenList.classList.add('show-list');
+        }
+    }    
+
     // Collapse responsive navbar when toggler is visible
     const navbarToggler = document.body.querySelector('.navbar-toggler');
     const responsiveNavItems = [].slice.call(
