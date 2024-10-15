@@ -384,7 +384,8 @@ button,
 [type=button],
 [type=reset],
 [type=submit] {
-  -webkit-appearance: button;
+  appearance: button; /* Standard property */
+  -webkit-appearance: button; /* Vendor-prefixed for WebKit browsers */
 }
 button:not(:disabled),
 [type=button]:not(:disabled),
@@ -442,7 +443,8 @@ legend + * {
 
 [type=search] {
   outline-offset: -2px;
-  -webkit-appearance: textfield;
+  appearance: textfield; /* Standard property for modern browsers */
+  -webkit-appearance: textfield; /* WebKit-prefixed for older browsers */
 }
 
 /* rtl:raw:
@@ -463,7 +465,8 @@ legend + * {
 
 ::file-selector-button {
   font: inherit;
-  -webkit-appearance: button;
+  appearance: button; /* Standard property */
+  -webkit-appearance: button; /* WebKit-prefixed property */
 }
 
 output {
