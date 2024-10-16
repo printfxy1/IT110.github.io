@@ -11193,6 +11193,7 @@ header.masthead .masthead-heading {
 .timeline .timeline-body > ul,
 .timeline .timeline-body > p {
   margin-bottom: 0;
+  text-align: left;
 }
 
 @media (min-width: 768px) {
