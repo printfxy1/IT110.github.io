@@ -38,16 +38,15 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     };
 
-    function showHiddenImage(imageId) {
-        var hiddenImage = document.getElementById(imageId);
-        
-        // Toggle the 'show' class to display or hide the image
-        if (hiddenImage.classList.contains('show')) {
-            hiddenImage.classList.remove('show');
+    function showHiddenImages(divId) {
+        var hiddenImages = document.getElementById(divId);
+        if (hiddenImages.style.display === "none" || hiddenImages.style.display === "") {
+            hiddenImages.style.display = "block"; // Show the images
         } else {
-            hiddenImage.classList.add('show');
+            hiddenImages.style.display = "none"; // Hide the images if clicked again
         }
     }
+    
     
     function showHiddenList(listId) {
         var hiddenList = document.getElementById(listId);

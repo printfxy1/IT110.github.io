@@ -106,11 +106,20 @@
   display: block; /* Makes the list visible */
 }
 
-.hidden-image {
-  display: none; /* Hides the image by default */
-  width: 100%; /* Make the hidden image responsive */
-  margin-top: 10px; /* Adds space between service content and the hidden image */
+.hidden-images {
+  display: none; /* Initially hidden */
+  margin-top: 20px;
 }
+
+.hidden-images img {
+  margin-bottom: 10px;
+  width: 100%; /* Adjust the size to fit */
+}
+
+.hidden-images img:hover {
+  opacity: 0.8; /* Optional hover effect */
+}
+
 
 .show {
   display: block; /* Displays the hidden image */
