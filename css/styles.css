@@ -111,13 +111,20 @@
   margin-top: 20px;
 }
 
-.hidden-images img {
+.hidden-images img, .service-image {
   margin-bottom: 10px;
   width: 100%; /* Adjust the size to fit */
+  transition: transform 0.3s ease; /* Smooth transition for the zoom effect */
 }
 
-.hidden-images img:hover {
-  opacity: 0.8; /* Optional hover effect */
+/* Zoom effect when hovering */
+.zoom-effect:hover {
+  transform: scale(1.1); /* Zoom in the image to 110% of its original size */
+}
+
+/* Optional hover effect for better feedback */
+.hidden-images img:hover, .service-image:hover {
+  opacity: 0.9;
 }
 
 
