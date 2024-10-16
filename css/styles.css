@@ -3754,7 +3754,10 @@ textarea.form-control-lg {
 .tab-content > .active {
   display: block;
 }
-
+.navbar-logo {
+  width: 300%; /* Change this value to increase or decrease the size */
+  height: auto; /* Maintain the aspect ratio */
+}
 .navbar {
   --bs-navbar-padding-x: 0;
   --bs-navbar-padding-y: 0.5rem;
